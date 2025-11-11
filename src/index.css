@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('../src/assets/fonts/LEMONMILK-Regular.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(213, 114, 114);
+}
+
+h1 {
+  margin: 20px;
+  font-family: LemonMilk;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(255, 0, 0);
+}
+
+
