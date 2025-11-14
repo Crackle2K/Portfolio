@@ -1,14 +1,17 @@
 import React from 'react'
 
-const cup = null;
-const pearls = null;
-const lid = null;
-const powder = null;
-const straw = null;
+const Boba = ({ onBobaClick, bpc, bobucks }) => {
+  const handleClick = () => {
+    if (typeof onBobaClick === 'function') onBobaClick()
+  }
 
-const Boba = () => {
   return (
-    <img></img>
+    <div className="boba-container">
+      <div className="bobucks-display">Bobucks: {bobucks}</div>
+      <button className="bobaBtn" onClick={handleClick} aria-label="Boba Button">
+        <img src="../src/assets/images/bubbleteaclick.png" alt="Bubble Tea" id="bubbleteaclicker" />
+      </button>
+    </div>
   )
 }
 

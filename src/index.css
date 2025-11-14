@@ -13,7 +13,7 @@
 }
 
 body {
-  padding-bottom: 72px;
+  padding-bottom: 84px;
   background-color: rgb(213, 114, 114);
 }
 
@@ -24,11 +24,127 @@ h1 {
 }
 
 footer {
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px 20px;
   background-color: #c0392b;
   color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
+footer p { margin: 0; }
 
 p {
   font-family: Poppins;
 }
+
+.boba-container {
+  position: fixed;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1100;
+}
+
+.upgrades-panel {
+  position: fixed;
+  left: 50%;
+  top: 140px;
+  transform: translateX(-50%);
+  width: 360px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.18);
+  padding: 16px;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 1200;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  font-family: Poppins;
+}
+
+.enhancements-panel {
+  position: fixed;
+  right: 16px;
+  top: 140px;
+  width: 360px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.18);
+  padding: 16px;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 1250;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  font-family: Poppins;
+}
+
+.enhance-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px }
+.enhance-name { font-weight:600 }
+.enhance-cost { margin-right:8px }
+.enhance-btn { background:#6b0000; color:#fff; border:none; padding:6px 8px; border-radius:6px }
+.enhance-btn:disabled { opacity:0.45 }
+
+.upgrade-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.upgrade-name { 
+  font-weight: 600; 
+  font-family: Poppins;
+}
+.upgrade-cost { 
+  font-size: 0.9rem; 
+  margin-right: 8px 
+}
+.upgrade-btn { background: #8b0000; color: #fff; border: none; padding: 6px 8px; border-radius: 6px; font-family: Poppins;}
+.upgrade-btn:disabled { opacity: 0.4 }
+
+.bobucks-display {
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+
+.bobaBtn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: clamp(160px, 24vw, 280px);
+  height: auto;
+  display: inline-block;
+}
+
+.bobaBtn img#bubbleteaclicker {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+}
+
+.bobaBtn {
+  transition: transform 140ms ease;
+}
+
+.bobaBtn:hover {
+  transform: scale(1.06);
+}
+

@@ -4,9 +4,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>Dinesh Sinnathamby</p>
-      <p>Student Developer</p>
-      <p>© {new Date().getFullYear()}</p>
+      <p>Dinesh Sinnathamby © {new Date().getFullYear()}</p>
     </footer>
   )
 }
