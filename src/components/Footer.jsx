@@ -1,10 +1,9 @@
 import React from 'react'
 
 const Footer = () => {
-
   return (
     <footer>
-      <p>Dinesh Sinnathamby © {new Date().getFullYear()}</p>
+      <p>© {new Date().getFullYear()} Dinesh Sinnathamby. All rights reserved.</p>
     </footer>
   )
 }
