@@ -1,11 +1,12 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import Home from './components/Home.jsx'
-import Showcase from './components/Showcase.jsx'
-import Achievements from './components/Achievements.jsx'
-import Contact from './components/Contact.jsx'
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./components/Home.jsx";
+import Showcase from "./components/Showcase.jsx";
+import Achievements from "./components/Achievements.jsx";
+import Contact from "./components/Contact.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,22 +20,20 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
-      <div className="portfolio">
-        <ScrollToTop />
-        <Navbar />
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/showcase" element={<Showcase />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    <div className="portfolio">
+      <ScrollToTop />
+      <Navbar />
 
-        <Footer />
-      </div>
-    </Router>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/showcase" element={<Showcase />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

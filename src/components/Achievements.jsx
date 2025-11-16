@@ -1,17 +1,28 @@
-import React from 'react'
+import React from "react";
+
+import bronzemed from "../assets/images/achievements/bronzemed.png";
+import bronzecross from "../assets/images/achievements/bronzecross.png";
 
 const Achievements = () => {
   return (
     <section className="section achievements">
       <h2>Certifications</h2>
+
       <div className="achievements-list">
+
         <div className="achievement-item">
           <div className="achievement-image">
-            <img src="../src/assets/images/achievements/bronzemed.png" alt="Bronze Medallion" />
+            <img src={bronzemed} alt="Bronze Medallion" />
           </div>
+
           <div className="achievement-content">
             <h3>Bronze Medallion</h3>
-            <p>Completed the Bronze Medallion certification, gaining essential water-rescue skills, strong judgment in emergency situations, and foundational training for the lifeguard pathway.</p>
+            <p>
+              Completed the Bronze Medallion certification, gaining essential water-rescue
+              skills, strong judgment in emergency situations, and foundational training
+              for the lifeguard pathway.
+            </p>
+
             <div className="tech-tags">
               <span className="tech-tag">Lifesaving</span>
               <span className="tech-tag">First Aid</span>
@@ -19,13 +30,19 @@ const Achievements = () => {
             </div>
           </div>
         </div>
+
         <div className="achievement-item">
           <div className="achievement-image">
-            <img src="../src/assets/images/achievements/bronzecross.png" alt="Bronze Cross" />
+            <img src={bronzecross} alt="Bronze Cross" />
           </div>
+
           <div className="achievement-content">
             <h3>Bronze Cross</h3>
-            <p>Earned the Bronze Cross certification, advancing my rescue skills, decision-making, and readiness for National Lifeguard training.</p>
+            <p>
+              Earned the Bronze Cross certification, advancing my rescue skills,
+              decision-making, and readiness for National Lifeguard training.
+            </p>
+
             <div className="tech-tags">
               <span className="tech-tag">Lifesaving</span>
               <span className="tech-tag">First Aid</span>
@@ -33,9 +50,10 @@ const Achievements = () => {
             </div>
           </div>
         </div>
+
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Achievements
+export default Achievements;
