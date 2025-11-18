@@ -15,6 +15,8 @@ const Home = () => {
       <p>w justin cao</p>
       <p>w leo fang</p>
       <p>w everyone else who voted bro</p>
+      <p>w bryan</p>
+      <p>w oscar</p>
     </section>
     
   )

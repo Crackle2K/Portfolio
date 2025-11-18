@@ -6,6 +6,7 @@ import baguettes from "../assets/images/showcase/baguettes.png";
 import riveote from "../assets/images/showcase/riveote.png";
 import colorfullamp from "../assets/images/showcase/colorfullamp.png";
 import blast from "../assets/images/showcase/blast.png";
+import effective from "../assets/images/showcase/effective.png";
 
 const Showcase = () => {
   const GithubIcon = () => (
@@ -195,6 +196,30 @@ const Showcase = () => {
 
               <div className="project-links">
                 <a href="https://github.com/Ladysnake/BLAST" target="_blank" rel="noopener noreferrer" className="project-link">
+                  <GithubIcon /> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributed-card">
+            <div className="contributed-image">
+              <img src={effective} alt="Effective" />
+            </div>
+
+            <div className="contributed-content">
+              <h4>Effective</h4>
+              <p>
+                The mod adds various effects like water splashes, waterfall clouds, fireflies, improved visual effects, screen shake and many more.
+              </p>
+
+              <div className="tech-tags">
+                <span className="tech-tag">Java</span>
+                <span className="tech-tag">Gradle</span>
+              </div>
+
+              <div className="project-links">
+                <a href="https://github.com/Ladysnake/Effective" target="_blank" rel="noopener noreferrer" className="project-link">
                   <GithubIcon /> GitHub
                 </a>
               </div>
