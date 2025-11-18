@@ -1,7 +1,5 @@
 import React from "react";
 
-import bronzemed from "../assets/images/achievements/bronzemed.png";
-import bronzecross from "../assets/images/achievements/bronzecross.png";
 
 const Achievements = () => {
   return (
@@ -11,9 +9,6 @@ const Achievements = () => {
       <div className="achievements-list">
 
         <div className="achievement-item">
-          <div className="achievement-image">
-            <img src={bronzemed} alt="Bronze Medallion" />
-          </div>
 
           <div className="achievement-content">
             <h3>Bronze Medallion</h3>
@@ -32,9 +27,6 @@ const Achievements = () => {
         </div>
 
         <div className="achievement-item">
-          <div className="achievement-image">
-            <img src={bronzecross} alt="Bronze Cross" />
-          </div>
 
           <div className="achievement-content">
             <h3>Bronze Cross</h3>
