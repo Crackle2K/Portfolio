@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 declare module '*.png' {
   const value: string;
   export default value;
@@ -28,13 +30,3 @@ declare module '*.webp' {
   export default value;
 }
 
-declare module '*.css' {
-  const value: string;
-  export default value;
-}
-
-declare module '*.svelte' {
-  import type { ComponentType, SvelteComponent } from 'svelte';
-  const component: ComponentType<SvelteComponent>;
-  export default component;
-}
